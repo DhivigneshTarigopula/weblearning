@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a sample website created to demonstrate the structure of a basic HTML document and various HTML elements.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, sample website, basic HTML structure, web development">
+    <meta name="author" content="Dhivi">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="refresh" content="40">
+    <title>sample website-GOOGLE</title>
+</head>
+<body>
+    <h1>Welcome to My Sample Website-GOOGLE</h1>
+    <p>This is a simple HTML page to demonstrate the structure of a basic website using google webpage.</p>
+    <hr>
+    <p>the above line is a horizontal rule. Made by the &lt;hr&gt; tag.</p>
+    <hr>
+    <p>GOOGLE we can write paragraphs like this. using the &lt;p&gt; tag.</p>
+    <hr>
+    <p>we can also write headings like this. using the &lt;h1&gt; tag to create the largest heading.and &lt;h2&gt; tag for the second largest heading. and so on to &lt;h6&gt; tag. the header tags are bolded</p>
+    <h1> Heading 1</h1>
+    <h2> Heading 2</h2>
+    <h3> Heading 3</h3>
+    <h4> Heading 4</h4>
+    <h5> Heading 5</h5>
+    <h6> Heading 6</h6>
+    <hr>
+    <p>we can use the &lt;style&gt; tag to define styles for the entire document. for example,</p>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+        h1 {
+            color: blue;
+        }
+        p {
+            color: rgb(131, 70, 110);
+        }
+    </style>
+    <hr color="black" size="5">
+    <p>we add empty row between elements using the &lt;br&gt; tag.</p>
+    <P>I used double break tags to give<br><br> a empty row </P>
+    <p>this is a paragraph with a line break.<br>this is the next line after the line break.</p>
+    <hr>
+    <p>i added comments to the code. but u can see them in the source.</p>
+    <!-- this is a comment. it will not be displayed on the webpage. -->
+    <hr>
+    <p>we can also add links to other websites using the &lt;a&gt; tag. and link can be attached with href attribute i.e.. href="https://google.com"</p>
+    <p>this is a link to <a href="https://google.com">Google</a> in the same window by default.</p>
+    <p>this is a link to <a href="https://google.com" target="_blank">Google</a> in a new window. with target="_blank" attribute</p>
+    <hr>
+    <p>we can add tooltips to links using the title attribute. it will be displayed when the user cursor hovers over the link.</p>
+    <p>this is a link to <a href="https://google.com" title="wanna visit Google?">Google</a> with a tooltip.</p>
+    <p>we can link the other page using the &lt;a&gt; tag which is present in the same directory/file. for example, <a href="secondind.html">Second Page</a>.</p>
+    <hr>
+    <p>we can also add images to the webpage using the &lt;img&gt; tag. and the image source can be specified using the src attribute. for example, <img src="images/googleicon.jpg" alt="Google Logo">.</p>
+    <p>the src attribute specifies as follows. src="images/googleicon.jpg"</p>
+    <p>I know size of the image is too big thus lets change the height and width with respective attributes. lets set height to 100px and width will change automatically with the aspect ratio.</p>
+    <img src="images/googleicon.jpg" alt="Google Logo" height="100px">
+    <p>we add alternative text to the image using the alt attribute if image fails to load. for example, <img src="npimage.jpg" alt="Google Logo">.</p>
+    <p>we can also make image clickable by wrapping it with an anchor tag. for example, <br><a href="https://google.com" target="_blank" title="open google"><img src="images/googleicon.jpg" alt="Google Logo" height="200px"></a>.</p>
+    <hr>
+    <p>adding a audio clip with the &lt;audio&gt; tag: i used boolean attribute controls to display the audio controls.</p>
+    <audio controls loop >
+        <source src="audio/HardRedHeart.mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <hr>
+    <p>adding a video clip with the &lt;video&gt; tag: i used boolean attribute controls to display the video controls.</p>
+    <video controls loop width="500px" height="220px">
+        <source src="video/mousey.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    <hr>
+    <p>lets see how to format text.</p>
+    <p>we can make text bold using the &lt;b&gt; tag. for example, <b>this text is bold.</b></p>
+    <p>we can make text italic using the &lt;i&gt; tag. for example, <i>this text is italic.</i></p>
+    <p>we can underline text using the &lt;u&gt; tag. for example, <u>this text is underlined.</u></p>
+    <p>we can also combine these tags to format text. for example, <b><i><u>this text is bold, italic and underlined.</u></i></b></p>
+    <p>we can also use the &lt;strong&gt; tag to indicate that the text is important. for example, <strong>this text is important.</strong></p>
+    <p>we can also use the &lt;em&gt; tag to indicate that the text is important. for example, <em>this text is important.</em></p>
+    <p>we can also use the &lt;small&gt; tag to make text smaller. for example, <small>this text is small.</small></p>
+    <p>we can also use the &lt;big&gt; tag to make text bigger. for example, <big>this text is big.</big></p>
+    <p>we can also use the &lt;mark&gt; tag to highlight text. for example, <mark>this text is highlighted.</mark></p>
+    <p>we can also use the &lt;del&gt; tag to indicate that the text is deleted. for example, <del>this text is deleted.</del></p>
+    <p>we can also use the &lt;ins&gt; tag to indicate that the text is inserted. for example, <ins>this text is inserted.</ins></p>
+    <p>we can also use the &lt;sub&gt; tag to make text subscript. for example, H<sub>2</sub>O.</p>
+    <p>we can also use the &lt;sup&gt; tag to make text superscript. for example, E=mc<sup>2</sup>.</p> 
+    <hr>
+    <p>lets see how to create lists.</p>
+    <p>we can create an unordered list using the &lt;ul&gt; tag and list items using the &lt;li&gt; tag. for example,</p>
+    <ul> 
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li> 
+    </ul>
+    <p>we can create an ordered list using the &lt;ol&gt; tag and list items using the &lt;li&gt; tag. for example,</p>
+    <ol>    
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>     
+    </ol>
+    <p>lets change the list indices by adding the type attribute to the &lt;ol&gt; tag. for example,</p>
+    <ol type="A">
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+    <p>lets make nested lists.</p>
+    <ul>
+        <li>Item 1
+            <ol type="i">
+                <li>Sub-item 1</li>
+                <li>Sub-item 2</li>
+                <li>Sub-item 3</li>
+                <li>Sub-item 4</li> 
+                <li>Sub-item 5</li>
+            </ol>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <dl>
+    <p>we can also create a definition list using the &lt;dl&gt; tag and terms using the &lt;dt&gt; tag and definitions using the &lt;dd&gt; tag. for example,</p>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+    <hr color="red" size="5">
+    <p>we can also use the &lt;div&gt; tag to group elements together and apply styles to them. for example,</p>
+    <div style="border: 1px solid black; padding: 10px;">
+        <h2>Section Title</h2>
+        <p>This is a paragraph inside the div.</p>
+    </div>
+    <hr color="blue" size="5">
+    <p>lets add tables.</p>
+    <table border="1">
+        <caption>Sample Table</caption>
+        <colgroup>
+            <col span="2" style="background-color:lightgray">
+            <col style="background-color:lightblue">
+        </colgroup>
+        <thead style="background-color:lightgreen">
+            <tr>
+                <th>Header 1</th>
+                <th colspan="2">Header 2</th>
+                <th width="100">This is section of &lt;thead&gt;</th>
+            </tr>
+        </thead>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+                <td rowspan="3" style="background-color:red;">This is section of &lt;tbody&gt;</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+        <tfoot style="background-color:rgb(158, 161, 44)">
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td colspan="2">Footer</td>
+                <td>This is section of &lt;tfoot&gt;</th>
+            </tr>
+    </table>
+    <hr color="violet" size="5">
+    <hr color="indigo" size="5">
+    <hr color="blue" size="5">
+    <hr color="green" size="5">
+    <hr color="yellow" size="5">
+    <hr color="orange" size="5">
+    <hr color="red" size="5">
+    <p>now lets learn about colors. we can use color names, hex codes, rgb values, rgba values, hsl values and hsla values to specify colors.</p>
+    <p>colouring a font using the &lt;font&gt; tag with color attribute. for example, <font color="red">this text is red.</font></p>
+    
+    <p>we can also use the &lt;span&gt; tag to group inline elements together and apply styles to them. for example,</p>
+    <p>This is a paragraph with <span style="color: red;">red text</span> and <span style="color: blue;">blue text</span>.</p>
+    <p>we can highlight text using the &lt;mark&gt; tag. for example, <mark style="background-color:cyan;">this text is highlighted.</mark></p>
+    <p>we used css style attribute to change the background color of the highlighted text,font color,padding,font size and font family.</p>
+    <p style="font-weight: bold;">let see one by one of properties of css style attribute.</p>
+    <p>first is background-color property which is used to change the background color of an element. for example, <span style="background-color:yellow;">this text has a yellow background.</span></p>
+    <p>color property which is used to change the font color of an element. for example, <span style="color:green;">this text is green.</span></p>
+    <p>padding property which is used to add space around the content of an element. for example, <span style="padding:10px; background-color:lightgray;">this text has padding.</span></p>
+    <p style="font-size: 30px;">Rest properties will be discussed <a href="secondind.html">here</a>.</p>
+    <hr color="black" size="5">
+    <p>lets see how to add symbols, which are not in keyboard.</p>
+    <p>&euro; by entity </p>
+    <p>&#8364; by decimal number </p>
+    <p>&#x20AC; by hexadecimal number </p>
+    <p>we can also use the &lt;sub&gt; tag to make text subscript. for example, H<sub>2</sub>O.</p>
+    <p>we can also use the &lt;sup&gt; tag to make text superscript. for example, E=mc<sup>2</sup>.</p>
+    <p>we can also use the &lt;code&gt; tag to display code snippets. for example, <code>this is a code snippet.</code></p>
+    <p>we can also use the &lt;pre&gt; tag to display preformatted text. for example, <pre>This is preformatted text.</pre></p>
+    <p>we can also use the &lt;blockquote&gt; tag to display block quotes. for example, <blockquote>This is a block quote.</blockquote></p>
+    <p>we can also use the &lt;q&gt; tag to display inline quotes. for example, <q>This is an inline quote.</q></p>
+    <p>we can also use the &lt;abbr&gt; tag to display abbreviations. for example, <abbr title="Hypertext Markup Language">HTML</abbr></p>
+    <p>we can also use the &lt;address&gt; tag to display contact information. for example, <address>123 Main St, Anytown, USA</address></p>
+    <p>we can also use the &lt;cite&gt; tag to display citations. for example, <cite>Author Name</cite></p>
+    <p>we can also use the &lt;dfn&gt; tag to display definitions. for example, <dfn>Definition</dfn></p>
+    <p>we can also use the &lt;kbd&gt; tag to display keyboard input. for example, <kbd>Ctrl + C</kbd></p>
+    <p>we can also use the &lt;samp&gt; tag to display sample output. for example, <samp>This is sample output.</samp></p>
+    <p>we can also use the &lt;var&gt; tag to display variables. for example, <var>x</var></p>
+    <p>we can also use the &lt;time&gt; tag to display time. for example, <time datetime="2024-06-01T12:00">June 1, 2024</time></p>
+    <p>we can also use the &lt;progress&gt; tag to display progress. for example, <progress value="70" max="100"></progress></p>
+    <p>we can also use the &lt;meter&gt; tag to display a measurement. for example, <meter value="0.6">60%</meter></p>
+    <p>we can also use the &lt;details&gt; tag to display additional information. for example, <details><summary>More Info</summary>This is additional information.</details></p>
+    <p>we can also use the &lt;summary&gt; tag to display a summary. for example, <details><summary>More Info</summary>This is additional information.</details></p>
+    <p>we can also use the &lt;dialog&gt; tag to display a dialog box. for example, <dialog open>This is a dialog box.</dialog></p>
+    <p>we can also use the &lt;menu&gt; tag to display a menu. for example, <menu><li>Menu Item 1</li><li>Menu Item 2</li></menu></p>
+    <p>we can also use the &lt;menuitem&gt; tag to display a menu item. for example, <menu><menuitem label="Menu Item 1"></menuitem><menuitem label="Menu Item 2"></menuitem></menu></p>
+    <p>we can also use the &lt;map&gt; tag to display a map. for example, <img src="planets.gif" usemap="#planetmap" alt="Planets"><map name="planetmap"><area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"><area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"><area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"></map></p>
+    <hr color="black" size="5">
+    <p>lets see how to use iframes to embed another webpage within the current webpage. for example, <iframe src="https://www.google.com" width="600" ></iframe>.</p>
+    <p>Above example does not display the embedded webpage due to security restrictions of google.Lets try a different approach.</p>
+    <p><b>take another webpage which is in the same directory/file and embed it using the &lt;iframe&gt; tag. for example,</b> <iframe src="iframeex.html" width="600" height="200" title="Iframe Example"></iframe>.</p>
+    <p><b>we can add and edit the border of the iframe using the border attribute. for example,</b><iframe src="iframeex.html" width="600" height="200" style="border: 5px solid red;"></iframe>.</p>
+    <p><b>we remove the border by setting the border attribute to 0. for example,</b>  <iframe src="iframeex.html" width="600" height="200" style="border: 0;"></iframe>.</p>
+    <hr color="cyan" size="5">
+    <p>lets add buttons</p>
+    <button style="background-color: blue; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 20px;" type="button" onclick="alert('Button 1 clicked!')">Button 1</button>
+    <button type="button" onclick="alert('Button 2 clicked!')">Button 2</button>
+    <p>we can also use the &lt;input&gt; tag to create buttons. for example, <input type="button" value="Button 3" onclick="alert('Button 3 clicked!')"></p>
+    <p>lets make some more functions on these buttons, like adding event listeners or modifying their appearance dynamically.</p>
+    <button id="dynamicButton" type="button">Dynamic Button</button>
+    <p>lets learn more about buttons and their functionalities in the javascript file.</p>
+    <hr color="silver" size="5">
+    <p>lets see how to use forms to collect user input. for example,</p>
+</body>
+</html>
